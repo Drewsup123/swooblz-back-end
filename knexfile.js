@@ -1,4 +1,10 @@
 // Update with your config settings.
+const localPgConnection = {
+  host: 'localhost', // address to find the db server
+  database: 'chat',
+  user: 'Drew',
+  password: 'pass',
+};
 
 const dbConnection = process.env.DATABASE_URL || localPgConnection;
 
