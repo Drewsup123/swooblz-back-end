@@ -1,4 +1,13 @@
 {
+  "name": "Swooblz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Drew Johnson",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
