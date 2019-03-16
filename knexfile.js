@@ -16,18 +16,7 @@ module.exports = {
     },
     useNullAsDefault: true
   },
-  staging: {
-    client: 'postgresql',
-    connection: dbConnection,
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'dbmigrations',
-      directory: "./database/migrations",
-    }
-  },
+
   production: {
     client: 'pg',
     connection: dbConnection,
@@ -36,11 +25,8 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'dbmigrations',
       directory: "./database/migrations"
     },
-    useNullAsDefault : true,
-    ssl : true,
   }
 
 };
