@@ -8,6 +8,9 @@
     "start": "node index.js",
     "server": "nodemon index.js"
   },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -16,7 +19,6 @@
     "jsonwebtoken": "^8.5.0",
     "knex": "^0.16.3",
     "node": "^11.11.0",
-    "nodemon": "^1.18.10",
     "pg": "^7.9.0",
     "socket.io": "^2.2.0",
     "sqlite3": "^4.0.6"

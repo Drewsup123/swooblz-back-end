@@ -9,27 +9,16 @@ const localPgConnection = {
 const dbConnection = process.env.DATABASE_URL || localPgConnection;
 
 module.exports = {
-
   development: {
-    client: 'sqlite3',
-    useNullAsDefault : true,
+    client: "sqlite3",
     connection: {
-      filename: './dev.sqlite3'
+      filename: "./database/dev.sqlite3"
     },
-    migrations: {
-      directory: './database/migrations',
-      tableName: 'dbmigrations',
-    },
-    seeds: { directory: './database/seeds' },
+    useNullAsDefault: true
   },
-
   staging: {
     client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    connection: dbConnection,
     pool: {
       min: 2,
       max: 10
@@ -39,7 +28,6 @@ module.exports = {
       directory: "./database/migrations",
     }
   },
-
   production: {
     client: 'pg',
     connection: {

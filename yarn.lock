@@ -1600,8 +1600,8 @@ node-pre-gyp@^0.11.0:
     tar "^4"
 
 node@^11.11.0:
-  version "11.11.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-11.11.0.tgz#0e4ac4cb52843e651fc3ca6eaf73e8fdf07532c8"
+  version "11.12.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-11.12.0.tgz#ecf81fc5c6f27fd597bd7ffbe1cf1f7c2fa3a990"
   dependencies:
     node-bin-setup "^1.0.0"
 
