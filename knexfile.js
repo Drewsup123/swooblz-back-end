@@ -21,6 +21,7 @@ module.exports = {
     client: "pg",
     connection: dbConnection,
     migrations: {
+      tableName: 'knex_migrations',
       directory: "./database/migrations"
     },
   }
