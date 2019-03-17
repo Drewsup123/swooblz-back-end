@@ -39,7 +39,7 @@ server.post("/register", (req, res) => {
         // console.log("Password hashed : ", typeof hashed)
         user.password = hashed;
         db("users")
-        .insert(user)
+        .insert(user, "*")
         .then(user => {
             res.status(201).json(user);
         })
