@@ -14,6 +14,9 @@ module.exports = {
     connection: {
       filename: "./database/dev.sqlite3"
     },
+    migrations : {
+      directory : "./database/migrations"
+    },
     useNullAsDefault: true
   },
 
@@ -21,7 +24,7 @@ module.exports = {
     client: "pg",
     connection: dbConnection,
     migrations: {
-      tableName: 'knex_migrations',
+      tableName: "knex_migrations",
       directory: "./database/migrations"
     },
   }
